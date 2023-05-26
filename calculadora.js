@@ -64,5 +64,6 @@ function limpiar() {
  */
 function eliminar() {
     var operacion = document.getElementById("calculo").value;
-    document.getElementById("calculo").value = operacion.substr(0, operacion.length - 1);;
+    document.getElementById("calculo").value = operacion.substr(0, operacion.length - 1);
+    puedesEscribir = true;
 }
