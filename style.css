@@ -56,6 +56,7 @@ body {
     height: 13.7vh;
     border: 0;
     margin-left: 1vh;
+    font-size: 30px;
     background-color: black;
     color: white;
     cursor: pointer;
@@ -78,6 +79,7 @@ body {
     width: 33.2vh;
     height: 13.7vh;
     border: 0;
+    font-size: 30px;
     margin-left: 1vh;
     background-color: black;
     color: white;
@@ -99,7 +101,8 @@ body {
     cursor: pointer;
     border-radius: 6px;
     border: 0;
-    width: 68vh;
+    width: 33.1vh;
+    font-size: 30px;
     height: 10vh;
     margin-left: 1vh;
     margin-top: 1vh;
@@ -110,7 +113,31 @@ body {
 .boton-limpieza:hover {
     border-radius: 6px;
     border: 0;
-    width: 68vh;
+    width: 33.1vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: rgb(164, 75, 75);
+    color: black;
+}
+
+.boton-eliminar {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    font-size: 30px;
+    width: 33.2vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: lightcoral;
+    color: black;
+}
+
+.boton-eliminar:hover {
+    border-radius: 6px;
+    border: 0;
+    width: 33.2vh;
     height: 10vh;
     margin-left: 1vh;
     margin-top: 1vh;

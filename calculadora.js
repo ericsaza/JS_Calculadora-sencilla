@@ -58,3 +58,11 @@ function limpiar() {
     document.getElementById("calculo").placeholder = "0";
     puedesEscribir = true;
 }
+
+/**
+ * Función para eliminar un caracter
+ */
+function eliminar() {
+    var operacion = document.getElementById("calculo").value;
+    document.getElementById("calculo").value = operacion.substr(0, operacion.length - 1);;
+}

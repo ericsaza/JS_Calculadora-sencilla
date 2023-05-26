@@ -13,11 +13,12 @@
 <body>
     <div class="calculadora">
         <div>
-            <input type="text" id="calculo" placeholder="0" required>
+            <input type="text" id="calculo" placeholder="0" required disabled>
         </div>
         <div class="botones">
             <div class="botones-extras">
                 <button class="boton-limpieza" onclick="limpiar()">AC</button>
+                <button class="boton-eliminar" onclick="eliminar()">DELETE</button>
             </div>
             <div class="botones-extras">
                 <button class="boton-calculadora" onclick="escribir('**')">x^</button>
