@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <div>
+            <input type="text" id="calculo" placeholder="0" required>
+        </div>
+        <div class="botones">
+            <div class="botones-extras">
+                <button class="boton-limpieza" onclick="limpiar()">AC</button>
+            </div>
+            <div class="botones-extras">
+                <button class="boton-calculadora" onclick="escribir('**')">x^</button>
+                <button class="boton-calculadora" onclick="escribir('&lpar;')">&lpar;</button>
+                <button class="boton-calculadora" onclick="escribir('&rpar;')">&rpar;</button>
+                <button class="boton-calculadora" onclick="escribir('÷')">÷</button>
+            </div>
+            <div class="operaciones">
+                <button class="boton-calculadora" onclick="escribir(7)">7</button>
+                <button class="boton-calculadora" onclick="escribir(8)">8</button>
+                <button class="boton-calculadora" onclick="escribir(9)">9</button>
+                <button class="boton-calculadora" onclick="escribir('x')">x</button>
+            </div>
+            <div class="operaciones">
+                <button class="boton-calculadora" onclick="escribir(4)">4</button>
+                <button class="boton-calculadora" onclick="escribir(5)">5</button>
+                <button class="boton-calculadora" onclick="escribir(6)">6</button>
+                <button class="boton-calculadora" onclick="escribir('-')">-</button>
+            </div>
+            <div class="operaciones">
+                <button class="boton-calculadora" onclick="escribir(1)">1</button>
+                <button class="boton-calculadora" onclick="escribir(2)">2</button>
+                <button class="boton-calculadora" onclick="escribir(3)">3</button>
+                <button class="boton-calculadora" onclick="escribir('+')">+</button>
+            </div>
+            <div class="resultado">
+                <button class="boton-cero" onclick="escribir(0)">0</button>
+                <button class="boton-calculadora" onclick="escribir('.')">.</button>
+                <button class="boton-calculadora" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © 2023 Eric Salado Zafra</footer>
+    <div class="historial">
+        historial
+        <textarea class="contenedor-historial" disabled></textarea>
+    </div>
+</body>
+<script src="calculadora.js">
+</script>
+
+</html>

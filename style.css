@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Calculator;
+    src: url("Calculator.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+    /* vh: vh és una medida que usa un porcentaje de la pantalla del usuario */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: lightgrey;
+}
+
+.calculadora {
+    width: 70vh;
+    height: 97vh;
+
+    /* Hace que todo el contenido que sobresale de su contenedor se oculte */
+    overflow: hidden;
+    background-color: darkgrey;
+    box-shadow: 0px 25px 50px -12px rgb(0 0 0/ 0.2);
+    border-radius: 12px;
+}
+
+#calculo {
+    width: 68vh;
+    height: 10vh;
+    outline: 0;
+    border: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    border-radius: 6px;
+    font-size: 40px;
+    font-family: Calculator;
+}
+
+
+.boton-calculadora {
+    border-radius: 6px;
+    margin-top: 1vh;
+    width: 15.85vh;
+    height: 13.7vh;
+    border: 0;
+    margin-left: 1vh;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.boton-calculadora:hover {
+    border-radius: 6px;
+    margin-top: 1vh;
+    width: 15.85vh;
+    height: 13.7vh;
+    border: 0;
+    margin-left: 1vh;
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.boton-cero {
+    border-radius: 6px;
+    margin-top: 1vh;
+    width: 33.2vh;
+    height: 13.7vh;
+    border: 0;
+    margin-left: 1vh;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.boton-cero:hover {
+    border-radius: 6px;
+    margin-top: 1vh;
+    width: 33.2vh;
+    height: 13.7vh;
+    border: 0;
+    margin-left: 1vh;
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.boton-limpieza {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    width: 68vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: lightcoral;
+    color: black;
+}
+
+.boton-limpieza:hover {
+    border-radius: 6px;
+    border: 0;
+    width: 68vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: rgb(164, 75, 75);
+    color: black;
+}
+
+.historial {
+    justify-content: center;
+    text-align: center;
+    width: 30vh;
+    height: 50vh;
+
+    /* Hace que todo el contenido que sobresale de su contenedor se oculte */
+    overflow: hidden;
+    background-color: darkgrey;
+    box-shadow: 0px 25px 50px -12px rgb(0 0 0/ 0.2);
+    border-radius: 12px;
+}
+
+.contenedor-historial {
+    border-radius: 12px;
+    background-color: white;
+    width: 28vh;
+    height: 46.5vh;
+    font-size: 20px;
+    font-family: Calculator;
+}
