@@ -19,12 +19,13 @@ function calcular() {
         document.getElementById("calculo").placeholder = "0";
         var arrayOperacion = operacion.split('');
         var operacionCorrecta = '';
-        let caracteresPermitidos = "1234567890+-x÷*/.%";
+        var caracteresPermitidos = "1234567890+-x÷*/.%";
         for (var i = 0; i < arrayOperacion.length; i++) {
 
             // Comprobaremos que los caracteres esten permitidos
             if (caracteresPermitidos.includes(arrayOperacion[i])) {
                 // console.log(arrayOperacion[i]);
+
                 // Convertiremos el signo de división en barra para que el método ".eval()" lo acepte
                 if (arrayOperacion[i] == '÷') {
                     arrayOperacion[i] = '/';
@@ -47,12 +48,12 @@ function calcular() {
         // Obtenemos la fecha en formato "DD/MM/YYYY"
         var fechaActual = fecha.toLocaleDateString();
         var horaActual = fecha.toLocaleTimeString();
-        console.log(fechaActual);
-        console.log(horaActual);
+        // console.log(fechaActual);
+        // console.log(horaActual);
         
         // Añadimos la operación en el historial
         historial.innerHTML += document.getElementById("calculo").value + " - " + fechaActual + " " + horaActual 
-        + "\n-------------------------------------\n";
+        + "\n---------------------------------------\n";
         document.getElementById("calculo").maxLength = document.getElementById("calculo").length;
         puedesEscribir = false;
     }
@@ -72,7 +73,9 @@ function limpiar() {
  */
 function eliminar() {
     var operacion = document.getElementById("calculo").value;
-    document.getElementById("calculo").value = operacion.substr(0, operacion.length - 1);
+    var operacionSinResultado = operacion.split("=");
+    operacionSinResultado[1] = "";
+    document.getElementById("calculo").value = operacion.substr(0, operacionSinResultado[0].length - 1);
     puedesEscribir = true;
 }
 
