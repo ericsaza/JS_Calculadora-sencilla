@@ -5,6 +5,7 @@ var puedesEscribir = true;
 function escribir(valorEscribir) {
     if (puedesEscribir) {
         document.getElementById("calculo").value += valorEscribir;
+        document.getElementById("calculo").placeholder = "0";
     }
 }
 
