@@ -151,7 +151,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 30vh;
-    height: 50vh;
+    height: 59vh;
 
     /* Hace que todo el contenido que sobresale de su contenedor se oculte */
     overflow: hidden;
@@ -167,4 +167,26 @@ body {
     height: 46.5vh;
     font-size: 20px;
     font-family: Calculator;
+}
+
+.boton-exportar {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    width: 28vh;
+    font-size: 20px;
+    height: 8vh;
+    background-color: lightcoral;
+    color: black;
+}
+
+.boton-exportar:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    width: 28vh;
+    font-size: 20px;
+    height: 8vh;
+    background-color: rgb(164, 75, 75);
+    color: black;
 }

@@ -24,7 +24,7 @@ function calcular() {
 
             // Comprobaremos que los caracteres esten permitidos
             if (caracteresPermitidos.includes(arrayOperacion[i])) {
-                console.log(arrayOperacion[i]);
+                // console.log(arrayOperacion[i]);
                 // Convertiremos el signo de división en barra para que el método ".eval()" lo acepte
                 if (arrayOperacion[i] == '÷') {
                     arrayOperacion[i] = '/';
@@ -34,16 +34,14 @@ function calcular() {
                 if (arrayOperacion[i] == 'x') {
                     arrayOperacion[i] = '*';
                 }
-
-
             }
-
             operacionCorrecta += arrayOperacion[i];
-
         }
-        console.log(operacionCorrecta);
+        // console.log(operacionCorrecta);
         document.getElementById("calculo").value += "=" + eval(operacionCorrecta);
         var historial = document.querySelector(".contenedor-historial");
+
+        // Añadimos la operación en el historial
         historial.innerHTML += document.getElementById("calculo").value + "\n";
         document.getElementById("calculo").maxLength = document.getElementById("calculo").length;
         puedesEscribir = false;
@@ -66,4 +64,70 @@ function eliminar() {
     var operacion = document.getElementById("calculo").value;
     document.getElementById("calculo").value = operacion.substr(0, operacion.length - 1);
     puedesEscribir = true;
+}
+
+
+/**
+ * Función para exportar el historial cuando se haya pulsado el botón
+ *  - Pedimos al usuario el nombre del archivo
+ */
+function exportarHistorial() {
+    var textoHistorial = document.getElementById("contenedorHistorial").value;
+
+    // Tendremos un menú donde preguntaremos al usuario que opción del menú quiere escoger
+    var menu = prompt('-----------------------------------------------------\n'
+        + '-                                 MENÚ                               -\n'
+        + '-----------------------------------------------------\n'
+        + 'E - Exportar historial\n'
+        + 'S - Salir');
+    while (menu != 's' && menu != 'S') {
+        if (menu == 'E' || menu == 'e') {
+
+            // Preguntaremos el nombre del archivo
+            var nombreArchivo = prompt('Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
+            var nombreFormateado = nombreArchivo + ".txt";
+
+            // Mientras este vacio o el usuario intente cancelar te volverá a preguntar
+            while (nombreArchivo == null || nombreArchivo == '') {
+                nombreArchivo = prompt('ERROR - Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
+                nombreFormateado = nombreArchivo + ".txt";
+            }
+
+            // Función donde estará el proceso de exportación
+            exportar(textoHistorial, nombreFormateado);
+
+            // Break es para romper el bucle
+            break;
+        }
+        menu = prompt('-----------------------------------------------------\n'
+            + '-                                 MENÚ                               -\n'
+            + '-----------------------------------------------------\n'
+            + 'E - Exportar historial\n'
+            + 'S - Salir');
+    }
+
+}
+
+/**
+ * Función para hacer el proceso de exportación
+ * @param texto: texto que queremos exportar
+ * @param nombreArchivo: Nombre del archivo (Solo se aceptará que sea txt)
+ */
+function exportar(texto, nombreArchivo) {
+
+    // Si sabes que el valor de una variable no cambiará durante todo el programa, es recomendable utilizar "const"
+    const link = document.createElement('a');
+    const contenido = texto;
+
+    // Creamos un objeto blob (Es un término que se usa para almacenar un elemento grande de datos en una base de datos que está en código binario.)
+    const blob = new Blob([contenido], { type: 'octet/stream' });
+
+    // Este código crea un enlace descargable a partir de un objeto blob en el navegador.
+    const enlace = window.URL.createObjectURL(blob);
+
+    // A la etiqueta "a" que habiamos creado antes, le añadimos un href y una descarga con el nombre que le pedimos al usuario
+    link.href = enlace;
+    link.download = nombreArchivo;
+    link.click();
+    window.URL.revokeObjectURL(enlace);
 }
