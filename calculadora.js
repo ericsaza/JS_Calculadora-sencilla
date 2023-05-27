@@ -14,7 +14,7 @@ function escribir(valorEscribir) {
 function calcular() {
     var operacion = document.getElementById("calculo").value;
     if (operacion == null || operacion == '') {
-        document.getElementById("calculo").placeholder = "ERROR";
+        document.getElementById("calculo").placeholder = "Syntax ERROR";
     } else {
         document.getElementById("calculo").placeholder = "0";
         var arrayOperacion = operacion.split('');
@@ -64,7 +64,7 @@ function calcular() {
             // Pero si da error deja el input vacio y deja un placeholder de error, ademas te muestra el error por consola
         } catch (error) {
             document.getElementById("calculo").value = "";
-            document.getElementById("calculo").placeholder = "ERROR";
+            document.getElementById("calculo").placeholder = "Syntax ERROR";
             console.log(error);
         }
     }
@@ -98,40 +98,29 @@ function eliminar() {
 function exportarHistorial() {
     var textoHistorial = document.getElementById("contenedorHistorial").value;
 
-    // Tendremos un menú donde preguntaremos al usuario que opción del menú quiere escoger
-    var menu = prompt('-----------------------------------------------------\n'
-        + '-                                 MENÚ                               -\n'
-        + '-----------------------------------------------------\n'
-        + 'E - Exportar historial\n'
-        + 'S - Salir');
-    while (menu != 's' && menu != 'S') {
-        if (menu == 'E' || menu == 'e') {
+    // Preguntaremos el nombre del archivo
+    var nombreArchivo = prompt('Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
+    var nombreFormateado = nombreArchivo + ".txt";
 
-            // Preguntaremos el nombre del archivo
-            var nombreArchivo = prompt('Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
-            var nombreFormateado = nombreArchivo + ".txt";
-
-            // Mientras este vacio o el usuario intente cancelar te volverá a preguntar
-            while (nombreArchivo == null || nombreArchivo == '') {
-                nombreArchivo = prompt('ERROR - Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
-                nombreFormateado = nombreArchivo + ".txt";
-            }
-
-            // Función donde estará el proceso de exportación
-            exportar(textoHistorial, nombreFormateado);
-
-            // Break es para romper el bucle
+    // Mientras este vacio o el usuario intente cancelar te volverá a preguntar
+    while (nombreArchivo == null || nombreArchivo == '') {
+        nombreArchivo = prompt('ERROR - Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
+        nombreFormateado = nombreArchivo + ".txt";
+        console.log(nombreArchivo);
+        if ((nombreArchivo != null || nombreArchivo != '')) {
             break;
         }
-        menu = prompt('-----------------------------------------------------\n'
-            + '-                                 MENÚ                               -\n'
-            + '-----------------------------------------------------\n'
-            + 'E - Exportar historial\n'
-            + 'S - Salir');
     }
 
+    // Función donde estará el proceso de exportación
+    exportar(textoHistorial, nombreFormateado);
 }
 
+function borrarHistorial() {
+    var historial = document.querySelector(".contenedor-historial");
+    historial.innerHTML = "";
+
+}
 /**
  * Función para hacer el proceso de exportación
  * @param texto: texto que queremos exportar

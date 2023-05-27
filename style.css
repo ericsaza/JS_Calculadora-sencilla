@@ -172,19 +172,43 @@ body {
     cursor: pointer;
     border-radius: 10px;
     border: 0;
-    width: 33vh;
-    font-size: 20px;
+    width: 16vh;
+    font-size: 15px;
     height: 8vh;
+    margin-top: 0.5vh;
+    margin-right: 0.5vh;
     background-color: lightcoral;
     color: black;
 }
 
 .boton-exportar:hover {
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 0;
-    width: 33vh;
-    font-size: 20px;
+    width: 16vh;
+    font-size: 15px;
+    height: 8vh;
+    background-color: rgb(164, 75, 75);
+    color: black;
+}
+
+.boton-borrar {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    width: 16vh;
+    font-size: 15px;
+    height: 8vh;
+    background-color: lightcoral;
+    color: black;
+}
+
+.boton-borrar:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    width: 16vh;
+    font-size: 15px;
     height: 8vh;
     background-color: rgb(164, 75, 75);
     color: black;
