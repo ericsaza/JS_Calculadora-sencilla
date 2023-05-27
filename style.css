@@ -150,7 +150,7 @@ body {
 .historial {
     justify-content: center;
     text-align: center;
-    width: 30vh;
+    width: 32vh;
     height: 59vh;
 
     /* Hace que todo el contenido que sobresale de su contenedor se oculte */
@@ -163,7 +163,7 @@ body {
 .contenedor-historial {
     border-radius: 12px;
     background-color: white;
-    width: 28vh;
+    width: 30vh;
     height: 46.5vh;
     font-size: 20px;
     font-family: Calculator;
@@ -171,9 +171,9 @@ body {
 
 .boton-exportar {
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 0;
-    width: 28vh;
+    width: 30vh;
     font-size: 20px;
     height: 8vh;
     background-color: lightcoral;
@@ -184,7 +184,7 @@ body {
     cursor: pointer;
     border-radius: 6px;
     border: 0;
-    width: 28vh;
+    width: 30vh;
     font-size: 20px;
     height: 8vh;
     background-color: rgb(164, 75, 75);

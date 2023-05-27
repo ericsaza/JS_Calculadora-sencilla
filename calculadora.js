@@ -41,8 +41,18 @@ function calcular() {
         document.getElementById("calculo").value += "=" + eval(operacionCorrecta);
         var historial = document.querySelector(".contenedor-historial");
 
+        // Obtendremos la fecha de la operación
+        var fecha = new Date();
+
+        // Obtenemos la fecha en formato "DD/MM/YYYY"
+        var fechaActual = fecha.toLocaleDateString();
+        var horaActual = fecha.toLocaleTimeString();
+        console.log(fechaActual);
+        console.log(horaActual);
+        
         // Añadimos la operación en el historial
-        historial.innerHTML += document.getElementById("calculo").value + "\n";
+        historial.innerHTML += document.getElementById("calculo").value + " - " + fechaActual + " " + horaActual 
+        + "\n-------------------------------------\n";
         document.getElementById("calculo").maxLength = document.getElementById("calculo").length;
         puedesEscribir = false;
     }
