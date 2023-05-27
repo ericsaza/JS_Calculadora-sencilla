@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: Calculator;
     src: url("../fonts/Calculator.ttf");
@@ -10,7 +9,7 @@
     box-sizing: border-box;
 }
 
-body {
+.principal {
     width: 100%;
 
     /* vh: vh és una medida que usa un porcentaje de la pantalla del usuario */
