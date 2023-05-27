@@ -104,13 +104,10 @@ function exportarHistorial() {
     var nombreFormateado = nombreArchivo + ".txt";
 
     // Mientras este vacio o el usuario intente cancelar te volverá a preguntar
-    while (nombreArchivo == null || nombreArchivo == '') {
+    while (nombreArchivo == null || nombreArchivo == '' || nombreArchivo.trim() == '') {
         nombreArchivo = prompt('ERROR - Escribe el nombre del archivo (no cal escribir formato, por defecto sera ".txt"): ');
         nombreFormateado = nombreArchivo + ".txt";
-        console.log(nombreArchivo);
-        if ((nombreArchivo != null || nombreArchivo != '')) {
-            break;
-        }
+        // console.log(nombreArchivo);
     }
 
     // Función donde estará el proceso de exportación
