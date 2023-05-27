@@ -39,23 +39,34 @@ function calcular() {
             operacionCorrecta += arrayOperacion[i];
         }
         // console.log(operacionCorrecta);
-        document.getElementById("calculo").value += "=" + eval(operacionCorrecta);
-        var historial = document.querySelector(".contenedor-historial");
 
-        // Obtendremos la fecha de la operación
-        var fecha = new Date();
+        // Try catch, es para control de errores
+        // Si no da error continuará todo normal
+        try {
+            document.getElementById("calculo").value += "=" + eval(operacionCorrecta);
+            var historial = document.querySelector(".contenedor-historial");
 
-        // Obtenemos la fecha en formato "DD/MM/YYYY"
-        var fechaActual = fecha.toLocaleDateString();
-        var horaActual = fecha.toLocaleTimeString();
-        // console.log(fechaActual);
-        // console.log(horaActual);
-        
-        // Añadimos la operación en el historial
-        historial.innerHTML += document.getElementById("calculo").value + " - " + fechaActual + " " + horaActual 
-        + "\n---------------------------------------\n";
-        document.getElementById("calculo").maxLength = document.getElementById("calculo").length;
-        puedesEscribir = false;
+            // Obtendremos la fecha de la operación
+            var fecha = new Date();
+
+            // Obtenemos la fecha en formato "DD/MM/YYYY"
+            var fechaActual = fecha.toLocaleDateString();
+            var horaActual = fecha.toLocaleTimeString();
+            // console.log(fechaActual);
+            // console.log(horaActual);
+
+            // Añadimos la operación en el historial
+            historial.innerHTML += document.getElementById("calculo").value + " - " + fechaActual + " " + horaActual
+                + "\n---------------------------------------\n";
+            document.getElementById("calculo").maxLength = document.getElementById("calculo").length;
+            puedesEscribir = false;
+
+            // Pero si da error deja el input vacio y deja un placeholder de error, ademas te muestra el error por consola
+        } catch (error) {
+            document.getElementById("calculo").value = "";
+            document.getElementById("calculo").placeholder = "ERROR";
+            console.log(error);
+        }
     }
 }
 
