@@ -9,18 +9,21 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightgrey;
+}
+
 .principal {
     width: 100%;
 
     /* vh: vh és una medida que usa un porcentaje de la pantalla del usuario */
-    height: 100vh;
+    height: 97vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-color: lightgrey;
 }
 
 .calculadora {
@@ -211,4 +214,8 @@
     height: 8vh;
     background-color: rgb(164, 75, 75);
     color: black;
+}
+
+footer {
+    text-align: center;
 }
