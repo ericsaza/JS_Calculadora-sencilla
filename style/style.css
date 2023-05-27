@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Calculator;
-    src: url("Calculator.ttf");
+    src: url("../fonts/Calculator.ttf");
 }
 
 * {
