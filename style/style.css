@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: lightgrey;
+    background-color: black;
 }
 
 .principal {
@@ -218,4 +218,5 @@ body {
 
 footer {
     text-align: center;
+    color: white;
 }
