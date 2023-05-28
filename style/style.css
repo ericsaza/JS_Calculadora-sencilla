@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: lightgrey;
 }
 
 .principal {
@@ -105,7 +105,7 @@ body {
     cursor: pointer;
     border-radius: 6px;
     border: 0;
-    width: 33.1vh;
+    width: 15.85vh;
     font-size: 30px;
     height: 10vh;
     margin-left: 1vh;
@@ -117,7 +117,7 @@ body {
 .boton-limpieza:hover {
     border-radius: 6px;
     border: 0;
-    width: 33.1vh;
+    width: 15.85vh;
     height: 10vh;
     margin-left: 1vh;
     margin-top: 1vh;
@@ -130,7 +130,7 @@ body {
     border-radius: 6px;
     border: 0;
     font-size: 30px;
-    width: 33.2vh;
+    width: 23.77vh;
     height: 10vh;
     margin-left: 1vh;
     margin-top: 1vh;
@@ -141,11 +141,35 @@ body {
 .boton-eliminar:hover {
     border-radius: 6px;
     border: 0;
-    width: 33.2vh;
+    width: 23.77vh;
     height: 10vh;
     margin-left: 1vh;
     margin-top: 1vh;
     background-color: rgb(164, 75, 75);
+    color: black;
+}
+
+.boton-historial {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0;
+    font-size: 30px;
+    width: 25.3vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: lightseagreen;
+    color: black;
+}
+
+.boton-historial:hover {
+    border-radius: 6px;
+    border: 0;
+    width: 25.3vh;
+    height: 10vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    background-color: rgb(19, 114, 110);
     color: black;
 }
 
@@ -179,7 +203,7 @@ body {
     height: 8vh;
     margin-top: 0.5vh;
     margin-right: 0.5vh;
-    background-color: lightcoral;
+    background-color: lightseagreen;
     color: black;
 }
 
@@ -190,7 +214,7 @@ body {
     width: 16vh;
     font-size: 15px;
     height: 8vh;
-    background-color: rgb(164, 75, 75);
+    background-color: rgb(19, 114, 110);
     color: black;
 }
 
@@ -201,7 +225,7 @@ body {
     width: 16vh;
     font-size: 15px;
     height: 8vh;
-    background-color: lightcoral;
+    background-color: lightseagreen;
     color: black;
 }
 
@@ -212,11 +236,11 @@ body {
     width: 16vh;
     font-size: 15px;
     height: 8vh;
-    background-color: rgb(164, 75, 75);
+    background-color: rgb(19, 114, 110);
     color: black;
 }
 
 footer {
     text-align: center;
-    color: white;
+    color: black;
 }

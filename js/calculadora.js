@@ -142,3 +142,12 @@ function exportar(texto, nombreArchivo) {
     link.click();
     window.URL.revokeObjectURL(enlace);
 }
+
+function verHistorial() {
+    var calculadora = document.querySelector(".calculadora");
+    if (calculadora.style.position === "absolute") {
+        calculadora.style.position = "relative";
+    }   else {
+        calculadora.style.position = "absolute";
+    }
+}

@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script defer src="js/fondoNieve.js"></script>
     <script src="js/calculadora.js"></script>
 </head>
 
 <body>
     <div class="principal">
-        <div class="calculadora">
+        <div class="calculadora" style="position: absolute;">
             <div>
                 <input type="text" id="calculo" placeholder="0" required disabled>
             </div>
@@ -22,6 +21,7 @@
                 <div class="botones-extras">
                     <button class="boton-limpieza" onclick="limpiar()">AC</button>
                     <button class="boton-eliminar" onclick="eliminar()">DELETE</button>
+                    <button class="boton-historial" onclick="verHistorial()">HISTORIAL</button>
                 </div>
                 <div class="botones-extras">
                     <button class="boton-calculadora" onclick="escribir('**')">x^</button>
