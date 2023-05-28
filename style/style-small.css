@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: stretch;
 }
 
 .calculadora {

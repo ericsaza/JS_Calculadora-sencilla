@@ -144,10 +144,10 @@ function exportar(texto, nombreArchivo) {
 }
 
 function verHistorial() {
-    var calculadora = document.querySelector(".calculadora");
-    if (calculadora.style.position === "absolute") {
-        calculadora.style.position = "relative";
+    var calculadora = document.querySelector(".historial");
+    if (calculadora.style.display === "none") {
+        calculadora.style.display = "block";
     }   else {
-        calculadora.style.position = "absolute";
+        calculadora.style.display = "none";
     }
 }

@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:0px) and (max-width:757px)"
+        href="style/style-small.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <script src="js/calculadora.js"></script>
@@ -13,7 +15,7 @@
 
 <body>
     <div class="principal">
-        <div class="calculadora" style="position: absolute;">
+        <div class="calculadora">
             <div>
                 <input type="text" id="calculo" placeholder="0" required disabled>
             </div>
@@ -54,14 +56,14 @@
                 </div>
             </div>
         </div>
-        <div class="historial">
+        <div class="historial" style="display: none;">
             historial
             <textarea class="contenedor-historial" id="contenedorHistorial" disabled style="resize:none;"></textarea>
             <button class="boton-exportar" id="exportar" onclick="exportarHistorial()">EXPORTAR</button>
             <button class="boton-borrar" id="borrar" onclick="borrarHistorial()">BORRAR</button>
         </div>
     </div>
-    
+
     <footer>Copyright © 2023 Eric Salado Zafra</footer>
 </body>
 </script>
