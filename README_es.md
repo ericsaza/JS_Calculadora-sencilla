@@ -1,3 +1,4 @@
+[Inglés](https://github.com/ericsaza/JS_Simple-Calculator/blob/main/README.md) / Español
 # JS_Calculadora_sencilla
 Esta es una calculadora sencilla implementada con HTML, CSS y JavaScript. Puedes utilizarla para realizar operaciones básicas de suma, resta, multiplicación, división y exponenciación.
 
