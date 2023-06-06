@@ -1,34 +1,34 @@
-# JS_Calculadora_sencilla
-Esta es una calculadora sencilla implementada con HTML, CSS y JavaScript. Puedes utilizarla para realizar operaciones básicas de suma, resta, multiplicación, división y exponenciación.
+English / [Spanish](https://github.com/ericsaza/JS_Simple-Calculator/blob/main/README_es.md)
+# JS_Simple_Calculator
+This is a simple calculator implemented with HTML, CSS, and JavaScript. You can use it to perform basic addition, subtraction, multiplication, division, and exponentiation operations.
 
-# Características
-- Interfaz de usuario intuitiva y fácil de usar.
-- Capacidad para realizar operaciones de suma, resta, multiplicación, división y exponenciación.
-- Diseño sencillo.
+# Attributes:
+- Intuitive and easy to use user interface.
+- Ability to perform addition, subtraction, multiplication, division and exponentiation operations.
+- Simple design.
 
-# Capturas de Pantalla.
+# Screenshots:
 ![image](https://github.com/ericsaza/JS_Calculadora_sencilla/assets/94136968/99fbbfa9-6823-49e7-81c9-5121dad9a3f7)
 ![image](https://github.com/ericsaza/JS_Calculadora_sencilla/assets/94136968/33cd2656-0b76-45f5-8254-a29804659782)
 
-# Uso
-1. Descarga todos los archivos del repositorio.
-2. Abre el archivo `index.html` en tu navegador web.
-3. La calculadora se cargará en tu navegador y estarás listo para usarla.
-4. Ingresa la operación que deseas realizar.
-5. Haz clic en el botón de `=` para obtener el resultado.
-6. El resultado se mostrará en la pantalla de la calculadora.
-- Si deseas personalizar el diseño o la funcionalidad de la calculadora, puedes editar los archivos HTML, CSS y JavaScript según tus necesidades.
-- Tambien puedes ir al enlace de mi página desde [aquí](https://ericsaza.github.io/JS_Calculadora_sencilla/).
+# How to use:
+1. Download all the files from the repository.
+2. Open the `index.html` file in your web browser.
+3. The calculator will load in your browser and you'll be ready to use it.
+4. Enter the operation you want to perform.
+5. Click the `=` button to get the result.
+6. The result will be displayed on the calculator screen.
+- If you want to customize the design or functionality of the calculator, you can edit the HTML, CSS and JavaScript files according to your needs.
+- You can also go to the link of my page from [here](https://ericsaza.github.io/JS_Simple-Calculator/).
 
-# Aquí está la estructura básica de los archivos:
-`index.html`: Contiene la estructura HTML de la calculadora y enlaza los archivos CSS y JavaScript.
-`style.css`: Define los estilos y la apariencia de la calculadora.
-`script.js`: Contiene el código JavaScript para realizar los cálculos y mostrar el resultado en la pantalla.
+# Here is the basic structure of the files:
+`index.html`: Contains the HTML structure of the calculator and links to the CSS and JavaScript files.
+`style.css`: Defines the styles and appearance of the calculator.
+`script.js`: Contains the JavaScript code to perform the calculations and display the result on the screen.
 
-# Contribuciones
-Las contribuciones son bienvenidas. Si tienes alguna idea para mejorar la calculadora o encuentras algún error, siéntete libre de abrir un problema o enviar una solicitud de extracción en el repositorio.
+# Contributions:
+Contributions are welcome. If you have any ideas to improve the calculator or find any bugs, feel free to open an issue or submit a pull request in the repository.
 
-# Créditos
-Este proyecto fue creado por [Eric_sa_za](https://www.linkedin.com/in/eric-salado-zafra/) y puedes encontrar el repositorio original [aquí](https://github.com/ericsaza).
-Si utilizas este código, por favor, menciona y enlaza el repositorio.
-
+# Credits:
+This project was created by [Eric_sa_za](https://github.com/ericsaza) and you can find the original repository [here](https://github.com/ericsaza/JS_Simple-Calculator).
+If you use this code, please mention and link to the repository.
