@@ -1,5 +1,5 @@
 English / [Spanish](https://github.com/ericsaza/JS_Simple-Calculator/blob/main/README_es.md)
-# JS_Simple_Calculator
+# Simple-Calculator
 This is a simple calculator implemented with HTML, CSS, and JavaScript. You can use it to perform basic addition, subtraction, multiplication, division, and exponentiation operations.
 
 # Attributes:
