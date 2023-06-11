@@ -19,7 +19,7 @@ This is a simple calculator implemented with HTML, CSS, and JavaScript. You can 
 5. Click the `=` button to get the result.
 6. The result will be displayed on the calculator screen.
 - If you want to customize the design or functionality of the calculator, you can edit the HTML, CSS and JavaScript files according to your needs.
-- You can also go to the link of my page from [here](https://ericsaza.github.io/JS_Simple-Calculator/).
+- You can also go to the link of my page from [here](https://ericsaza.github.io/Simple-Calculator/).
 
 # Here is the basic structure of the files:
 `index.html`: Contains the HTML structure of the calculator and links to the CSS and JavaScript files.
@@ -30,5 +30,5 @@ This is a simple calculator implemented with HTML, CSS, and JavaScript. You can 
 Contributions are welcome. If you have any ideas to improve the calculator or find any bugs, feel free to open an issue or submit a pull request in the repository.
 
 # Credits:
-This project was created by [Eric_sa_za](https://github.com/ericsaza) and you can find the original repository [here](https://github.com/ericsaza/JS_Simple-Calculator).
+This project was created by [Eric_sa_za](https://github.com/ericsaza) and you can find the original repository [here](https://github.com/ericsaza/Simple-Calculator).
 If you use this code, please mention and link to the repository.
