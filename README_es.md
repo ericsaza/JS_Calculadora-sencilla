@@ -19,7 +19,7 @@ Esta es una calculadora sencilla implementada con HTML, CSS y JavaScript. Puedes
 5. Haz clic en el botón de `=` para obtener el resultado.
 6. El resultado se mostrará en la pantalla de la calculadora.
 - Si deseas personalizar el diseño o la funcionalidad de la calculadora, puedes editar los archivos HTML, CSS y JavaScript según tus necesidades.
-- Tambien puedes ir al enlace de mi página desde [aquí](https://ericsaza.github.io/JS_Calculadora_sencilla/).
+- Tambien puedes ir al enlace de mi página desde [aquí](https://ericsaza.github.io/Calculadora_sencilla/).
 
 # Aquí está la estructura básica de los archivos:
 `index.html`: Contiene la estructura HTML de la calculadora y enlaza los archivos CSS y JavaScript.
@@ -30,5 +30,5 @@ Esta es una calculadora sencilla implementada con HTML, CSS y JavaScript. Puedes
 Las contribuciones son bienvenidas. Si tienes alguna idea para mejorar la calculadora o encuentras algún error, siéntete libre de abrir un problema o enviar una solicitud de extracción en el repositorio.
 
 # Créditos:
-Este proyecto fue creado por [Eric_sa_za](https://github.com/ericsaza/) y puedes encontrar el repositorio original [aquí](https://github.com/ericsaza/JS_Simple-Calculator/).
+Este proyecto fue creado por [Eric_sa_za](https://github.com/ericsaza/) y puedes encontrar el repositorio original [aquí](https://github.com/ericsaza/Simple-Calculator/).
 Si utilizas este código, por favor, menciona y enlaza el repositorio.
